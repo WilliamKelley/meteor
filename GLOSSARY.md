@@ -15,6 +15,22 @@ Meteor has a packaging system called "Isobuild". Isobuild knows how to compile t
 
 related terms: [Isopack](#isopack), [Unibuild](#unibuild)
 
+## Isomorphic
+Having similar structure or appearance but being of different ancestry. Broken down, “iso-” means equal, and “-morphic” means having the same shape, form, or structure.
+
+Isomorphism is not specific to Meteor, but rather it is a core quality of the Meteor environment where different platforms and resources are united in a similar interface for application-programmers.
+
+related terms: [Isomorphic JavaScript](#isomorphic-javascript), [Isobuild](#isobuild), [Isopack](#isopack), [Isopackets](#isopackets)
+
+## Isomorphic JavaScript
+JavaScript code that can run on both the server and client. Also called “Universal JavaScript.”
+
+An obstacle to writing isomorphic JavaScript is that the server and client environments each have unique features to extend the programmer’s control and abilities. For instance, server-side JavaScript will include access to databases, other servers, the file system, etc., but the client-side environment might not have the same API for these features or even have these features at all.
+
+Meteor bridges this gap between server and client JavaScript with abstractions that allow application-programmers to write the same code in either context with isomorphic Javascript.
+
+related terms: [Isomorphic](#isomorphic)
+
 ## Isopack
 Each package used by Isobuild forms an Isopack. Isopack is a package format containing source code for each architecture it can be ran on. Each separate part built for a separate architecture is called "Unibuild".
 
@@ -33,6 +49,15 @@ This is the Meteor command-line tool. Most of the code for it is in the [tools d
 The Meteor tool also includes testing functionality and example apps for the Meteor framework.
 
 It also defines the version of Meteor, when we say that you are using Meteor 1.12.1 that means you are using meteor-tool@1.12.1. 
+
+## Minimongo
+A client-side implementation of the MongoDB API, against an in-memory JavaScript database. Minimongo is like a MongoDB emulator that runs inside a web browser. This allows application-programmers to store and retrieve data on the client with the same code as they would write on the server. The Minimongo API is a subset of the complete MongoDB node driver API.
+
+In Meteor, Minimongo is primarily used as a sophisticated data cache for documents published by the server, but it is not limited to that. Minimongo is a [core package](#core-package) of Meteor.
+
+related terms: [Isomorphic JavaScript](#isomorphic-javascript)
+
+see more: [source code](https://github.com/meteor/meteor/tree/devel/packages/minimongo)
 
 ## Unibuild
 Isopack is a package format containing source code for each architecture it can be ran on. Each separate part built for a separate architecture is called "Unibuild".
